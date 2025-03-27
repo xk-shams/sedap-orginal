@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@/styles/TotalCounts.css";
+import styles from "@/styles/TotalCounts.module.css";
 import Image from "next/image";
 
 class TotalCounts extends React.Component {
