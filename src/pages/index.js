@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-      <div className="width-main">
+      {/* <div className="width-main">
             <PageTitle
               title="Dashboard"
               subTitle="Hi, Samantha. Welcome back  to Sedap Admin!"
@@ -42,8 +42,8 @@ export default function Home() {
                   <p className="chartP">Total Revenue</p>
                 </div>
               </div>
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
       </div>
     </>
   );
