@@ -1,5 +1,9 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
+import PageTitle from "@/components/common/PageTitle";
+import TotalCounts from "@/components/pages/TotalCounts";
+import PieChart from "@/components/common/PieChart";
+import { Pie } from "react-chartjs-2";
 
 export default function Home() {
   return (
@@ -11,7 +15,35 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <h1>dashboard</h1>
+      <div className="width-main">
+            <PageTitle
+              title="Dashboard"
+              subTitle="Hi, Samantha. Welcome back  to Sedap Admin!"
+            />
+            <div className="total-flex">
+              <TotalCounts />
+              <TotalCounts />
+              <TotalCounts />
+              <TotalCounts />
+            </div>
+            <div className="chartDv">
+              <h2 className="chart_h2">Pie Chart</h2>
+              <div className="chart-dv">
+                <div className="chart">
+                  <PieChart foiz={81} qoldiq={19} color="#FF5B5B" />
+                  <p className="chartP">Total Order</p>
+                </div>
+                <div className="chart">
+                  <PieChart foiz={22} qoldiq={78} color="#00B074" />
+                  <p className="chartP">Customer Growth</p>
+                </div>
+                <div className="chart">
+                  <PieChart foiz={40} qoldiq={60} color="#2D9CDB" />
+                  <p className="chartP">Total Revenue</p>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </>
   );
