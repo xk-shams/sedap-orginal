@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import styles from "@/styles/dashboard.css";
+import styles from "@/styles/dashboard.module.css";
 
 
 export default class Dashboard extends React.Component {

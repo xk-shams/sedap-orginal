@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styles from '@/styles/PageTitle.css'
+import styles from '@/styles/PageTitle.module.css'
 
 class PageTitle extends Component {
   constructor(props) {
